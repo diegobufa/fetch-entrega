@@ -27,7 +27,6 @@ const fetchData = async () =>{
     try {
         const res = await fetch(`datas/peliculas.json`);
         const data = await res.json();
-
         redenderizarProductos(data);
 
    } catch(error){
