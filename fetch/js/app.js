@@ -1,4 +1,4 @@
-    const DOMitems = document.querySelector('#items');
+const DOMitems = document.querySelector('#items');
     const DOMcarrito = document.querySelector('#carrito');
     const DOMtotal = document.querySelector('#total');
     const DOMbotonVaciar = document.querySelector('#boton-vaciar');
@@ -25,7 +25,7 @@
 const fetchData = async () =>{
     
     try {
-        const res = await fetch(`/segundaEntrega-master/datas/peliculas.json`);
+        const res = await fetch(`/datas/peliculas.json`);
         const data = await res.json();
 
         redenderizarProductos(data);
