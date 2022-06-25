@@ -25,7 +25,7 @@ const DOMitems = document.querySelector('#items');
 const fetchData = async () =>{
     
     try {
-        const res = await fetch(`datas/peliculas.json`);
+        const res = await fetch("https://diegobufa.github.io/segundaEntrega/datas/peliculas.JSON");
         const data = await res.json();
         redenderizarProductos(data);
 
@@ -91,7 +91,7 @@ const fetchData = async () =>{
             miNodoCardBody.appendChild(miNodoBoton);
             miNodo.appendChild(miNodoCardBody);
             DOMitems.appendChild(miNodo);
-    
+    z
         })
     }
     
